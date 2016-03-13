@@ -1,0 +1,19 @@
+{
+  "name": "myrkit",
+  "description": "myrkit",
+  "main": "index.js",
+  "authors": [
+    "meryan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mstupen/myrkit",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
