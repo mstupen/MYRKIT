@@ -24,7 +24,7 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
 $('.row .thumbnail').on('load', function() {
 
 }).each(function(i) {
-  if(this.complete) {
+  //if(this.complete) {
   	var item = $('<div class="item"></div>');
     var itemDiv = $(this).parents('div');
     var title = $(this).parent('a').attr("title");
@@ -35,7 +35,7 @@ $('.row .thumbnail').on('load', function() {
     if (i==0){ // set first item active
      item.addClass('active');
     }
-  }
+  //}
 });
 
 /* activate the carousel */
