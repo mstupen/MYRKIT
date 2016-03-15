@@ -30,6 +30,7 @@ module.exports = function(grunt) {
             '*.html',
             'js/holder.min.js',
             'js/ie10-viewport-bug-workaround.js',
+            'css/myrkit.css',
             'css/ie10-viewport-bug-workaround.css'
           ],
           dest: 'dist/'
