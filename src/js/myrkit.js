@@ -20,37 +20,12 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-/* copy loaded thumbnails into carousel */
-$('.row .thumbnail').on('load', function() {
-
-}).each(function(i) {
-  //if(this.complete) {
-  	var item = $('<div class="item"></div>');
-    var itemDiv = $(this).parents('div');
-    var title = $(this).parent('a').attr("title");
-
-    item.attr("title",title);
-  	$(itemDiv.html()).appendTo(item);
-  	item.appendTo('.carousel-inner');
-    if (i==0){ // set first item active
-     item.addClass('active');
-    }
-  //}
-});
-
-/* activate the carousel */
-$('#photoCarousel').carousel({interval:false});
-
-/* change modal title when slide changes */
-$('#photoCarousel').on('slid.bs.carousel', function () {
-  $('.modal-title').html($(this).find('.active').attr("title"));
-})
-
-/* when clicking a thumbnail */
-$('.row .thumbnail').click(function(){
-    var idx = $(this).parents('div').index();
-  	var id = parseInt(idx);
-  	$('#myModal').modal('show'); // show the modal
-    $('#photoCarousel').carousel(id); // slide carousel to selected
-
+$(document).ready(function() {
+  $('.thumbnail').click(function(){
+        $('.modal-body').empty();
+    	var title = $(this).parent('a').attr("title");
+    	$('.modal-title').html(title);
+    	$($(this).parents('div').html()).appendTo('.modal-body');
+    	$('#myModal').modal({show:true});
+  });
 });
