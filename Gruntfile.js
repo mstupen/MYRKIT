@@ -28,6 +28,7 @@ module.exports = function(grunt) {
           cwd: 'src/',
           src: [
             '*.html',
+            'img/',
             'js/holder.min.js',
             'js/ie10-viewport-bug-workaround.js',
             'css/myrkit.css',
