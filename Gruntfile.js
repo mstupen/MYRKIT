@@ -14,8 +14,8 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['src/*'],
-        tasks: ['copy'],
+        files: ['src/*', 'src/*/*'],
+        tasks: ['copy', 'uglify'],
         options: {
           spawn: false,
         },
@@ -28,7 +28,8 @@ module.exports = function(grunt) {
           cwd: 'src/',
           src: [
             '*.html',
-            'img/',
+            'ru/*',
+            'img/*','img/*/*',
             'js/holder.min.js',
             'js/ie10-viewport-bug-workaround.js',
             'css/myrkit.css',

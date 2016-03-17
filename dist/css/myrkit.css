@@ -1,5 +1,54 @@
-
 /* photo carousel styles */
 
-.modal-dialog {width:600px;}
-.thumbnail {margin-bottom:6px;}
+.modal-dialog {
+  width: 600px;
+}
+.thumbnail {
+  margin-bottom: 6px;
+}
+#map {
+  height: 350px;
+  width: 99%;
+}
+.navbar .logo img {
+  width: 35px;
+  float: left;
+  margin: 5px;
+  margin-left: 15px;
+}
+.container address {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  #contact .container address {
+    font-size: 21px;
+  }
+}
+.carousel .item {
+  overflow: hidden;
+  max-height: 418px;
+}
+.carousel .item img {
+  width: 100%;
+  height: auto;
+}
+.navbar .container {
+  font-size: 16px;
+}
+.section-heading {
+  color: #6115EA;
+}
+.page-header {
+    border-bottom: 1px solid #6115EA;
+}
+.carousel-indicators .active {
+    background-color: #6115EA;
+    width: 13px;
+    height: 13px;
+}
+.meliota-primary-color {
+  color: #6115EA;
+}
