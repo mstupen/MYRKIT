@@ -29,7 +29,7 @@
 }
 .carousel .item {
   overflow: hidden;
-  max-height: 418px;
+  max-height: 653px;
 }
 .carousel .item img {
   width: 100%;
@@ -46,8 +46,6 @@
 }
 .carousel-indicators .active {
     background-color: #6115EA;
-    width: 13px;
-    height: 13px;
 }
 .meliota-primary-color {
   color: #6115EA;
