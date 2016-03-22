@@ -50,3 +50,14 @@
 .meliota-primary-color {
   color: #6115EA;
 }
+.carousel {
+  margin-top: 53px;
+}
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+}
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+}
